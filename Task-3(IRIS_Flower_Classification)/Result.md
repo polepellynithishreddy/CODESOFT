@@ -1,53 +1,34 @@
-import pandas as pd
-from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, classification_report
+## Iris Flower Classification
 
-# Option 1: Using double backslashes
-# file_path = 'C:\\Users\\HP\\OneDrive\\Desktop\\CODSOFT\\IRIS_Flower_Classification\\IRIS.csv'
+This project uses the Iris dataset to classify flowers into three species: Setosa, Versicolor, and Virginica based on sepal and petal measurements. We use a RandomForestClassifier from scikit-learn for classification.
 
-# Option 2: Using a raw string
-# file_path = r'C:\Users\HP\OneDrive\Desktop\CODSOFT\IRIS_Flower_Classification\IRIS.csv'
+### Dataset
+- **Source**: Iris dataset (IRIS.csv)
+- **Features**: Sepal Length, Sepal Width, Petal Length, Petal Width
+- **Target**: Species (Setosa, Versicolor, Virginica)
 
-# Option 3: Using forward slashes
-file_path = 'C:/Users/HP/OneDrive/Desktop/CODSOFT/IRIS_Flower_Classification/IRIS.csv'
+### Model
+- **Algorithm**: RandomForestClassifier
+- **Train-Test Split**: 80% training, 20% testing
 
-# Load the dataset
-iris_data = pd.read_csv(file_path)
+### Results
+```
+Accuracy: 0.9666666666666667
 
-# Display the first few rows of the dataset
-print(iris_data.head())
+Classification Report:
+              precision    recall  f1-score   support
 
-# Check for missing values
-missing_values = iris_data.isnull().sum()
-print(missing_values)
+           0       1.00      1.00      1.00         10
+           1       0.93      1.00      0.96         12
+           2       0.92      0.83      0.87         12
 
-# Initialize the LabelEncoder
-label_encoder = LabelEncoder()
+    accuracy                           0.97         34
+   macro avg       0.95      0.94      0.94         34
+weighted avg       0.97      0.97      0.97         34
+```
 
-# Encode the 'species' column
-iris_data['species'] = label_encoder.fit_transform(iris_data['species'])
+- **Accuracy**: The model achieved an accuracy of approximately 96.67%.
+- **Classification Report**: The detailed classification report includes precision, recall, and f1-score for each class (species).
 
-# Define features (X) and target (y)
-X = iris_data.drop('species', axis=1)
-y = iris_data['species']
-
-# Split the data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-# Initialize the model
-rf_model = RandomForestClassifier(random_state=42)
-
-# Train the model
-rf_model.fit(X_train, y_train)
-
-# Make predictions on the test set
-y_pred = rf_model.predict(X_test)
-
-# Evaluate the model
-accuracy = accuracy_score(y_test, y_pred)
-report = classification_report(y_test, y_pred)
-
-print(f"Accuracy: {accuracy}")
-print(f"Classification Report:\n{report}")
+### Conclusion
+The RandomForestClassifier performed well on the Iris dataset, achieving high accuracy and providing reliable classification metrics for each species. This demonstrates the effectiveness of the model for this classification task.
