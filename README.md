@@ -101,6 +101,22 @@ pip install pandas numpy matplotlib seaborn
 
 ## Output
 
+### Age Distribution
+
+![Age Distribution](images/age_distribution.png)
+
+### Passenger Class Distribution
+
+![Passenger Class Distribution](images/passenger_class_distribution.png)
+
+### Survival by Pclass
+
+![Survival by Pclass](images/survival_by_pclass.png)
+
+### Fare by Pclass
+
+![Fare by Pclass](images/fare_by_pclass.png)
+
 - **Preprocessed Data:**
 
   The DataFrame `data` will contain the preprocessed features and encoded categorical variables.
