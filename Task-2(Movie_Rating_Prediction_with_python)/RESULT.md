@@ -39,7 +39,7 @@ Mean Squared Error (Ridge): 0.997042830181843
 Cross-Validated MSE: 0.7682136505673798
 ```
 ### Feature Importance Plot
-![Feature Importance Plot](images/Feature_Importance_Plot.png)
+![Feature Importance Plot](Feature_Importance_Plot.png)
 
 The results from the Random Forest model are promising, with a mean squared error of approximately 0.804. Feature importance analysis shows that 'Votes' and 'Duration' are the most influential features in predicting the movie ratings. The Ridge regression model has a higher MSE of 0.997, indicating that the Random Forest model performs better for this task. Cross-validation confirms the stability of the Random Forest model's performance.
 
