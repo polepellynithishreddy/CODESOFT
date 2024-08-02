@@ -111,19 +111,19 @@ pip install pandas numpy matplotlib seaborn
 
 ### Pie Charts of Passenger Categories
 
-![Pie Charts of Passenger Categories](images/Pie Charts of Passenger Categories.png)
+![Pie Charts of Passenger Categories](images/Pie_Charts.png)
 
 ### Boxplot of Passenger Ages
 
-![Boxplot of Passenger Ages](images/Boxplot of Passenger Ages.png)
+![Boxplot of Passenger Ages](images/Boxplot.png)
 
 ### Count Plots of Passengers by Survival, Pclass, and Survival/Pclass Combination
 
-![Count Plots of Passengers by Survival, Pclass, and Survival/Pclass Combination](images/Count Plots of Passengers by Survival, Pclass, and Survival/Pclass Combination.png)
+![Count Plots of Passengers by Survival, Pclass, and Survival/Pclass Combination](images/Count_Plots.png)
 
 ### Histograms of Age and Fare Distributions
 
-![Histograms of Age and Fare Distributions](images/Histograms of Age and Fare Distributions.png)
+![Histograms of Age and Fare Distributions](images/Histograms.png)
 
 
 ## Notes
