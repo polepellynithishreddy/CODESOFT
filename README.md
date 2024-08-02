@@ -101,22 +101,6 @@ pip install pandas numpy matplotlib seaborn
 
 ## Output
 
-### Age Distribution
-
-![Age Distribution](images/age_distribution.png)
-
-### Passenger Class Distribution
-
-![Passenger Class Distribution](images/passenger_class_distribution.png)
-
-### Survival by Pclass
-
-![Survival by Pclass](images/survival_by_pclass.png)
-
-### Fare by Pclass
-
-![Fare by Pclass](images/fare_by_pclass.png)
-
 - **Preprocessed Data:**
 
   The DataFrame `data` will contain the preprocessed features and encoded categorical variables.
@@ -124,6 +108,23 @@ pip install pandas numpy matplotlib seaborn
 - **Plots:**
 
   The generated plots will help visualize the distribution of various features and their relationships.
+
+### Pie Charts of Passenger Categories
+
+![Pie Charts of Passenger Categories](images/Pie Charts of Passenger Categories.png)
+
+### Boxplot of Passenger Ages
+
+![Boxplot of Passenger Ages](images/Boxplot of Passenger Ages.png)
+
+### Count Plots of Passengers by Survival, Pclass, and Survival/Pclass Combination
+
+![Count Plots of Passengers by Survival, Pclass, and Survival/Pclass Combination](images/Count Plots of Passengers by Survival, Pclass, and Survival/Pclass Combination.png)
+
+### Histograms of Age and Fare Distributions
+
+![Histograms of Age and Fare Distributions](images/Histograms of Age and Fare Distributions.png)
+
 
 ## Notes
 
