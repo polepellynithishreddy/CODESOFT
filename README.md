@@ -125,6 +125,8 @@ pip install pandas numpy matplotlib seaborn
 
 ![Histograms of Age and Fare Distributions](images/Histograms.png)
 
+### Correlation Heatmap
+![Correlation Heatmap](images/Correlation_Heatmap.png)
 
 ## Notes
 
