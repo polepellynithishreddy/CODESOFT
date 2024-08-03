@@ -1,7 +1,3 @@
-Here is the content you can include in your README file, summarizing the steps and results of your Python script:
-
----
-
 # Sales Prediction Using Python
 
 This project demonstrates a comprehensive approach to predicting sales using various machine learning models. The dataset used includes advertising expenditures in different media (TV, Radio, Newspaper) and the corresponding sales figures. The script involves data loading, visualization, model training, evaluation, and hyperparameter tuning.
@@ -186,7 +182,3 @@ Two key visualizations were generated:
 ## Conclusion
 
 This project demonstrates the importance of data visualization, model comparison, and hyperparameter tuning in building effective machine learning models for sales prediction. The Random Forest model, especially after tuning, provided the best performance for our dataset.
-
----
-
-Adjust the placeholders for the MSE and R² values with your actual results. Save the scatter plot matrix and heatmap images in your project directory and ensure they are named `scatter_plot_matrix.png` and `correlation_matrix_heatmap.png`, respectively.
